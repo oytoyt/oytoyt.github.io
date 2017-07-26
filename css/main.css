@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+nav ul {
+  overflow: hidden;
+  background: #333;
+}
+nav ul li {
+  list-style: none;
+  float: left;
+}
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #999;
+  transition: 1s;
+}
+nav ul li .on {
+  color: #aaa;
+  background: #000;
+}
+
+#box > li {
+  color: #fff;
+  font-size: 50vh;
+  text-align: center;
+}
+
+#box > li:nth-of-type(1) .page1_box {
+  width: 300px;
+  height: 300px;
+  float: left;
+  background: red;
+}
+
+#box > li:nth-of-type(2) .write {
+  width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  text-indent: 2em;
+  font-size: 36px;
+}
+
+#box > li:nth-of-type(4) {
+  position: relative;
+}
+#box > li:nth-of-type(4) canvas {
+  background: red;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.section img {
+  display: block;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30%;
+  margin: auto 0;
+}
+.section .present {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translateY(-50%);
+}
+.section .present p {
+  text-align: left;
+  font-size: 24px;
+  margin: 40px 0;
+  color: #ddd;
+  transform: translate3d(-2000px, 0, 0);
+}
