@@ -17,7 +17,7 @@ window.onload = function () {
     // 25s 后跳转到开奖页面
     setTimeout(() => {
         console.log('跳转到开奖页面')
-        window.location.href = `${location.origin}/reward.html?openid=${openid}`
+        // window.location.href = `${location.origin}/reward.html?openid=${openid}`
     }, 25 * 1000)
 
     // 建立socket连接
