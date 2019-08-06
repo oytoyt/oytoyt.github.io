@@ -1,0 +1,906 @@
+.content {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+    //display: none;
+
+    .background-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .edge-pannel {
+        position: absolute;
+        width: 36vw;
+        height: 1.67vw;
+        top: 35.05vw;
+        left: 21.5vw;
+        overflow: hidden;
+    }
+
+    .qrcode-pannel {
+        position: absolute;
+        //background-color: antiquewhite;
+        width: 12vw;
+        top: 6vw;
+        right: 21vw;
+        text-align: center;
+
+        .qrcode-content {
+            background-color: white;
+            width: 12vw;
+            height: 12vw;
+
+            img {
+                width: 100%;
+            }
+
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: white;
+            font-size: 14px;
+            height: 20px;
+            line-height: 20px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .wechat-qrcode-title {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+    .join-button {
+        position: absolute;
+        width: 20vw;
+        left: 40%;
+        top: 42%;
+        margin-left: -10vw;
+    }
+
+    .number {
+        position: absolute;
+        height: 30vh;
+        left: 45%;
+        top: 42%;
+        margin-top: -10vh;
+        display: none;
+    }
+
+    .number_one {
+        left: 48%;
+    }
+
+    .show_number {
+        display: block;
+    }
+
+    .hide_number {
+        display: none;
+    }
+
+    .btn_div {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+
+        button, a {
+            font-size: 14px;
+            color: #717171;
+            text-align: center;
+            padding: 5px;
+            border: none;
+            border-radius: 4px;
+        }
+        .result {
+            background-color: white;
+        }
+    }
+
+    .action_user {
+        position: absolute;
+        background-color: aquamarine;
+        bottom: 49%;
+        left: 52.5%;
+        width: 0.6vw;
+        border-radius: 0.3vw;
+        box-shadow: 1px 1px 8px #67929d;
+        display: none;
+    }
+
+    .activity_user_list {
+        position: absolute;
+        //background-color: aquamarine;
+        width: 33vw;
+        height: 5vw;
+        bottom: 14%;
+        left: 25.5%;
+
+        .user {
+            width: 2vw;
+            border-radius: 1vw;
+            box-shadow: 1px 1px 8px #67929d;
+            display: none;
+        }
+
+        .user0 {
+            position: absolute;
+            top: 32px;
+            left: 1vw;
+        }
+
+        .user1 {
+            position: absolute;
+            top: 18px;
+            left: 2.5vw;
+        }
+
+        .user2 {
+            position: absolute;
+            top: 30px;
+            left: 4vw;
+        }
+
+        .user3 {
+            position: absolute;
+            top: 16px;
+            left: 5.5vw;
+        }
+
+        .user4 {
+            position: absolute;
+            top: 29px;
+            left: 7vw;
+        }
+
+        .user5 {
+            position: absolute;
+            top: 44px;
+            left: 8.5vw;
+        }
+
+        .user6 {
+            position: absolute;
+            bottom: 28px;
+            left: 10vw;
+        }
+
+        .user7 {
+            position: absolute;
+            bottom: 20px;
+            left: 11.5vw;
+        }
+
+        .user8 {
+            position: absolute;
+            bottom: 28px;
+            left: 13vw;
+        }
+
+        .user9 {
+            position: absolute;
+            bottom: 8px;
+            left: 14.5vw;
+        }
+
+        .user10 {
+            position: absolute;
+            bottom: 28px;
+            left: 16vw;
+        }
+
+        .user11 {
+            position: absolute;
+            bottom: 12px;
+            left: 17.5vw;
+        }
+
+        .user12 {
+            position: absolute;
+            bottom: 28.5px;
+            left: 18.5vw;
+        }
+
+        .user13 {
+            position: absolute;
+            bottom: 18px;
+            left: 20vw;
+        }
+
+        .user14 {
+            position: absolute;
+            bottom: 28px;
+            left: 21.5vw;
+        }
+
+        .user15 {
+            position: absolute;
+            bottom: 15px;
+            left: 23vw;
+        }
+
+        .user16 {
+            position: absolute;
+            bottom: 28px;
+            left: 24.5vw;
+        }
+
+        .user17 {
+            position: absolute;
+            bottom: 18px;
+            left: 26.5vw;
+        }
+
+        .user18 {
+            position: absolute;
+            bottom: 28px;
+            left: 28vw;
+        }
+
+        .user19 {
+            position: absolute;
+            bottom: 18px;
+            left: 29.5vw;
+        }
+
+        .user_show {
+            display: block;
+            transition: 20s;
+            transform: translateY(0);
+        }
+    }
+}
+
+.lottery {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+    display: none;
+
+    .background-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .number {
+        position: absolute;
+        height: 30vh;
+        left: 45%;
+        top: 30% !important;
+        display: none;
+    }
+
+    .number_one {
+        left: 48%;
+    }
+
+    .show_number {
+        display: block;
+    }
+
+    .hide_number {
+        display: none;
+    }
+
+    .edge-pannel {
+        position: absolute;
+        width: 71.3vw;
+        height: 2vw;
+        top: 30.8vw;
+        left: 14.6vw;
+        overflow: hidden;
+    }
+
+    .qrcode-pannel {
+        position: absolute;
+        //background-color: antiquewhite;
+        width: 12vw;
+        top: 6vw;
+        right: 6vw;
+        text-align: center;
+
+        .qrcode-content {
+            background-color: white;
+            width: 12vw;
+            height: 12vw;
+            margin-bottom: 10px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        p {
+            color: white;
+            font-size: 14px;
+            height: 20px;
+            line-height: 20px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .wechat-qrcode-title {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+    .water {
+        position: absolute;
+    }
+
+    .water-10 {
+        width: 46.5vw;
+        bottom: 8vw;
+        left: 31vw;
+        //display: none;
+    }
+
+    .water-20 {
+        width: 47vw;
+        bottom: 9.5vw;
+        left: 31vw;
+        display: none;
+    }
+
+    .water-30 {
+        width: 48.5vw;
+        bottom: 11vw;
+        left: 30vw;
+        display: none;
+    }
+
+    .water-40 {
+        width: 50vw;
+        bottom: 12.5vw;
+        left: 28.8vw;
+        display: none;
+    }
+
+    .water-50 {
+        width: 51vw;
+        bottom: 14vw;
+        left: 28vw;
+        display: none;
+    }
+
+    .water-60 {
+        width: 52vw;
+        bottom: 15.5vw;
+        left: 27.5vw;
+        display: none;
+    }
+
+    .water-70 {
+        width: 53vw;
+        bottom: 17vw;
+        left: 26.5vw;
+        display: none;
+    }
+
+    .water-80 {
+        width: 54vw;
+        bottom: 18vw;
+        left: 25.6vw;
+        display: none;
+    }
+
+    .water-90 {
+        width: 54.5vw;
+        bottom: 19.2vw;
+        left: 24.8vw;
+        display: none;
+    }
+
+    .water-100 {
+        width: 57vw;
+        bottom: 25.6vw;
+        left: 22.5vw;
+        display: none;
+    }
+
+    .water-full {
+        width: 54vw;
+        bottom: 23.5vw;
+        left: 23vw;
+        display: none;
+    }
+
+    .lotter-button {
+        position: absolute;
+        width: 20vw;
+        left: 50%;
+        top: 32%;
+        margin-left: -10vw;
+        // display: none;
+    }
+
+    .count_down {
+        position: absolute;
+        font-size: 140px;
+        font-family: Baskerville, 'Palatino Linotype', Palatino,
+        'Century Schoolbook L', 'Times New Roman', 'serif';
+        color: white;
+        top: 16%;
+        left: 48%;
+    }
+
+    .winner_info_pannel {
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        position: absolute;
+        top: 9vw;
+        left: 2vw;
+        display: none;
+
+        p {
+            font-family: Georgia, "Times New Roman",
+            "Microsoft YaHei", "微软雅黑",
+            STXihei, "华文细黑",
+            serif;
+            width: 7vw;
+        }
+    }
+
+    .winner_first, .winner_second, .winner_third {
+        text-align: center;
+    }
+
+    .winner_pannel {
+        position: absolute;
+        //background-color: aquamarine;
+        width: 28vw;
+        height: 16vw;
+        bottom: 59%;
+        left: 32.8%;
+        display: none;
+
+        .pannel_light {
+            position: absolute;
+            width: 28vw;
+            left: 0;
+            bottom: 2vw;
+        }
+
+        .logo_winner {
+            width: 5vw;
+            position: absolute;
+        }
+
+        .logo_winner0 {
+            top: 30px;
+            left: 6vw;
+        }
+
+        .logo_winner1 {
+            width: 12vw;
+            top: 0;
+            left: 8.4vw;
+        }
+
+        .logo_winner2 {
+            top: 40px;
+            right: 6vw;
+        }
+
+        .winner {
+            width: 3vw;
+            border-radius: 1.5vw;
+            position: absolute;
+        }
+
+        .winner_img0 {
+            bottom: 3.6vw;
+            left: 7vw;
+        }
+
+        .winner_img1 {
+            bottom: 5.2vw;
+            left: 13vw;
+        }
+
+        .winner_img2 {
+            bottom: 3vw;
+            right: 7vw;
+        }
+    }
+
+    .number {
+        position: absolute;
+        height: 30vh;
+        left: 45%;
+        top: 42%;
+        margin-top: -10vh;
+        display: none;
+    }
+
+    .number_one {
+        left: 48%;
+    }
+
+    .show_number {
+        display: block;
+    }
+
+    .hide_number {
+        display: none;
+    }
+
+    .btn_div {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+
+        button {
+            font-size: 14px;
+            color: #717171;
+            text-align: center;
+            padding: 5px;
+            border: none;
+            border-radius: 4px;
+        }
+    }
+
+    .activity_user_list {
+        position: absolute;
+        //background-color: aquamarine;
+        width: 45vw;
+        height: 6vw;
+        bottom: 16%;
+        left: 31%;
+
+        .user {
+            width: 3vw;
+            border-radius: 1.5vw;
+            box-shadow: 1px 1px 8px #67929d;
+            display: none;
+        }
+
+        .user0 {
+            position: absolute;
+            top: 28px;
+            left: 4vw;
+        }
+
+        .user1 {
+            position: absolute;
+            top: 45px;
+            left: 10vw;
+        }
+
+        .user2 {
+            position: absolute;
+            top: 25px;
+            left: 16vw;
+        }
+
+        .user3 {
+            position: absolute;
+            top: 38px;
+            left: 22vw;
+        }
+
+        .user4 {
+            position: absolute;
+            top: 26px;
+            right: 8vw;
+        }
+
+        .user5 {
+            position: absolute;
+            top: 35px;
+            right: 1vw;
+        }
+
+        .user6 {
+            position: absolute;
+            bottom: 0;
+            left: 6vw;
+        }
+
+        .user7 {
+            position: absolute;
+            bottom: 15px;
+            left: 13.5vw;
+        }
+
+        .user8 {
+            position: absolute;
+            bottom: 25px;
+            right: 13vw;
+        }
+
+        .user9 {
+            position: absolute;
+            bottom: 15px;
+            right: 5vw;
+        }
+
+        .user10 {
+            position: absolute;
+            top: 48px;
+            left: 2vw;
+        }
+
+        .user11 {
+            position: absolute;
+            top: 65px;
+            left: 11.5vw;
+        }
+
+        .user12 {
+            position: absolute;
+            top: 40px;
+            left: 19.5vw;
+        }
+
+        .user13 {
+            position: absolute;
+            top: 58px;
+            left: 24vw;
+        }
+
+        .user14 {
+            position: absolute;
+            top: 52px;
+            right: 10.5vw;
+        }
+
+        .user15 {
+            position: absolute;
+            top: 58px;
+            right: 2.8vw;
+        }
+
+        .user16 {
+            position: absolute;
+            bottom: 14px;
+            left: 8vw;
+        }
+
+        .user17 {
+            position: absolute;
+            bottom: 2px;
+            left: 17vw;
+        }
+
+        .user18 {
+            position: absolute;
+            bottom: 5px;
+            right: 15.5vw;
+        }
+
+        .user19 {
+            position: absolute;
+            bottom: 5px;
+            right: 7vw;
+        }
+
+        .user_show {
+            display: block;
+            transition: 5s;
+            transform: translateY(0);
+        }
+    }
+
+    .user_list_water_full {
+        bottom: 42.5%;
+        width: 46vw;
+        left: 28%;
+    }
+
+    .water_full {
+        bottom: 22vw;
+        left: 23.2vw;
+        width: 57vw;
+    }
+
+    .user_list_water_init {
+        bottom: 8vw;
+        left: 31vw;
+        width: 46.5vw;
+    }
+
+    .water_init {
+        bottom: 42.5%;
+        width: 46vw;
+        left: 28%;
+    }
+
+    .testStop img{
+        animation: none;
+    }
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.breathing-img0 {
+    //animation: breathing 4s ease-out infinite normal;
+    animation: idle 5s ease-in-out infinite;
+}
+
+.breathing-img1 {
+    //animation: breathing 3s ease-out infinite normal;
+    animation: idle 4s ease-in-out infinite;
+}
+
+.breathing-img2 {
+    //animation: breathing 5s ease-out infinite normal;
+    animation: idle 6s ease-in-out infinite;
+}
+
+.breathing-img3 {
+    //animation: breathing 2s ease-out infinite normal;
+    animation: idle 3s ease-in-out infinite;
+}
+
+.breathing-img4 {
+    //animation: breathing 3s ease-out infinite normal;
+    animation: idle 4s ease-in-out infinite;
+}
+
+.breathing-img5 {
+    //animation: breathing 4s ease-out infinite normal;
+    animation: idle 5s ease-in-out infinite;
+}
+
+.breathing-img6 {
+    //animation: breathing 2s ease-out infinite normal;
+    animation: idle 3s ease-in-out infinite;
+}
+
+.breathing-img7 {
+    //animation: breathing 4s ease-out infinite normal;
+    animation: idle 5s ease-in-out infinite;
+}
+
+.breathing-img8 {
+    //animation: breathing 3s ease-out infinite normal;
+    animation: idle 4s ease-in-out infinite;
+}
+
+.breathing-img9 {
+    //animation: breathing 2s ease-out infinite normal;
+    animation: idle 2s ease-in-out infinite;
+}
+
+@keyframes breathing {
+    0% {
+        transform: scale(0.9);
+    }
+
+    25% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.water-step {
+    animation: water-step 20s ease-in-out;
+}
+
+.user_step {
+    animation: user-step 20s ease-in-out;
+    // img{
+    //     animation: none;
+    // }
+}
+
+.water-down {
+    animation: water-down 3s ease-in-out;
+}
+
+@keyframes idle {
+    from, to {
+        transform: translate(-6%, 0%);
+    }
+    25% {
+        transform: translate(-12%, -6%);
+    }
+    50% {
+        transform: translate(-6%, -12%);
+    }
+    75% {
+        transform: translate(0%, -6%);
+    }
+}
+
+@keyframes water-step {
+    from {
+        bottom: 8vw;
+        left: 31vw;
+        width: 46.5vw;
+    }
+    to {
+        bottom: 22vw;
+        left: 23.2vw;
+        width: 57vw;
+    }
+}
+
+// 第一名
+@keyframes water-user-first {
+    from {
+        bottom: 8vw;
+        left: 31vw;
+        width: 46.5vw;
+    }
+    to {
+        bottom: 23vw;
+        left: 23.2vw;
+        width: 57vw;
+    }
+}
+
+// 第二名
+@keyframes water-user-second {
+    from {
+        bottom: 8vw;
+        left: 31vw;
+        width: 46.5vw;
+    }
+    to {
+        bottom: 22.4vw;
+        left: 23.2vw;
+        width: 57vw;
+    }
+}
+
+// 第三名
+@keyframes water-user-third {
+    from {
+        bottom: 8vw;
+        left: 31vw;
+        width: 46.5vw;
+    }
+    to {
+        bottom: 22.7vw;
+        left: 23.2vw;
+        width: 57vw;
+    }
+}
+
+@keyframes user-step {
+    from {
+        width: 45vw;
+        bottom: 16%;
+        left: 31%;
+    }
+    to {
+        bottom: 42.5%;
+        width: 48vw;
+        left: 25%;
+    }
+}
+
+@keyframes water-down {
+    from {
+        bottom: 49%;
+        left: 52.5%;
+        width: 0.6vw;
+    }
+    to {
+        bottom: 22.8%;
+        left: 51.5%;
+        width: 2vw;
+        border-radius: 1vw;
+    }
+}
