@@ -17,7 +17,7 @@
 <body>
   <div id="container" style="width: 100vw; height: 100vh;"></div>
   <script src="https://cdn.jsdelivr.net/npm/jquery@1.11.3/dist/jquery.min.js"></script>
-  <script src="https://gw.alipayobjects.com/os/lib/antv/g6/3.7.1/dist/g6.min.js"></script>
+  <script src="https://gw.alipayobjects.com/os/lib/antv/g6/4.2.7/dist/g6.min.js"></script>
   <script src="./data.js"></script>
   <script>
     const lineDash = [4, 2, 1, 2];
@@ -57,31 +57,6 @@
       'line',
     );
 
-    const tooltip = new G6.Tooltip({
-      offsetX: 10,
-      offsetY: 10,
-      fixToNode: [1, 0.5],
-      // the types of items that allow the tooltip show up
-      // 允许出现 tooltip 的 item 类型
-      itemTypes: ['node', 'edge'],
-      // custom the tooltip's content
-      // 自定义 tooltip 内容
-      getContent: (e) => {
-        const outDiv = document.createElement('div');
-        outDiv.style.width = 'fit-content';
-        outDiv.style.height = 'fit-content';
-        const model = e.item.getModel();
-        if (e.item.getType() === 'node') {
-          outDiv.innerHTML = `${model.name}`;
-        } else {
-          // const source = e.item.getSource();
-          // const target = e.item.getTarget();
-          // outDiv.innerHTML = `来源：${source.getModel().name}<br/>去向：${target.getModel().name}`;
-        }
-        return outDiv;
-      },
-    });
-
     const container = document.getElementById('container');
     const width = container.scrollWidth;
     const height = container.scrollHeight || 500;
@@ -91,27 +66,15 @@
       width,
       height,
       layout: {
-        type: 'force',
-        preventOverlap: true,
-        linkDistance: 300
+        type: 'gForce',
+        gpuEnabled: true,
+        maxIteration: data.nodes.length
       },
-      // plugins: [tooltip],
-      // defaultEdge: {
-      //   type: 'circle-running',
-      //   style: {
-      //     lineWidth: 2,
-      //     stroke: '#bae7ff',
-      //   },
-      // },
       modes: {
-        default: ['drag-canvas', 'activate-relations'],
-      },
-      defaultNode: {
-        size: [10, 10]
+        default: ['drag-canvas', 'drag-node'],
       },
       defaultEdge: {
         type: 'line',
-        /* style for the keyShape */
         style: {
           stroke: '#aaa',
           lineAppendWidth: 2,
@@ -132,6 +95,9 @@
     // 渲染图
     graph.render();
     // graph.fitView();
+    graph.on('afterlayout', () => {
+      graph.fitView();
+    });
 
     function clearAllStats() {
       graph.setAutoPaint(false);
@@ -176,14 +142,6 @@
       const edges = node.getEdges();
       edges.forEach((edge) => graph.setItemState(edge, 'running', true));
     });
-    // graph.on('node:mouseleave', clearAllStats);
-    // graph.on('canvas:click', clearAllStats);
-
-    // graph.on('node:mouseenter', (ev) => {
-    //   const node = ev.item;
-    //   const edges = node.getEdges();
-    //   edges.forEach((edge) => graph.setItemState(edge, 'running', true));
-    // });
     graph.on('node:mouseleave', (ev) => {
       const node = ev.item;
       const edges = node.getEdges();
