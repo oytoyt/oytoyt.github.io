@@ -54,7 +54,7 @@
           }
         },
       },
-      'cubic',
+      'line',
     );
 
     const tooltip = new G6.Tooltip({
@@ -95,7 +95,7 @@
         preventOverlap: true,
         linkDistance: 300
       },
-      plugins: [tooltip],
+      // plugins: [tooltip],
       // defaultEdge: {
       //   type: 'circle-running',
       //   style: {
@@ -110,6 +110,7 @@
         size: [10, 10]
       },
       defaultEdge: {
+        type: 'line',
         /* style for the keyShape */
         style: {
           stroke: '#aaa',
